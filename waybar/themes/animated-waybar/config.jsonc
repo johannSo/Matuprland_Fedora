@@ -72,7 +72,7 @@
     "hyprland/window": {
 	    "format": "{title}",
 	    "icon": true,
-	    "max-length": 50,
+	    "max-length": 30,
 	    "rewrite": {
 		    "(.*) - Discord": "Discord",
 		    "OBS (.*)": "OBS"
