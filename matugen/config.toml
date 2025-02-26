@@ -79,11 +79,7 @@ output_path = '~/.config/qt6ct/colors/matugen-qt6ct.conf'
 input_path = '~/.config/matugen/templates/matugen-cava'
 output_path = '~/.config/cava/config'
 
-
-
-# Kvantum
-# [templates.kvantum]
-# input_path = '~/.config/matugen/templates/matugen.kvconfig'
-# output_path = '~/.config/Kvantum/matugen/matugen.kvconfig'
-
-
+# Neovim
+[templates.neovim]
+input_path = '~/.config/matugen/templates/matugen-colors.vim'
+output_path = '~/.cache/wal/colors-wal.vim'
