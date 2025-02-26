@@ -94,7 +94,7 @@ textbox-prompt-colon {
     border-radius:               12px;
     background-color:            @active;
     text-color:                  @selected-text;
-    font:                        "IosevkaTerm Nerd Font 16";
+    font:                        "GeistMono Nerd Font 16";
 }
 entry{
     expand:                      true;
