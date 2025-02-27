@@ -2,26 +2,22 @@
 #  ┳┓┏┓┏┓┳┓┏┓┏┓┓┏
 #  ┣┫┣ ┣ ┣┫┣ ┗┓┣┫
 #  ┛┗┗┛┻ ┛┗┗┛┗┛┛┗
-#                
-
+#
 
 # kill already running processes
 _ps=(waybar rofi swaync)
 for _prs in "${_ps[@]}"; do
-    if pidof "${_prs}" >/dev/null; then
-        pkill "${_prs}"
-    fi
+  if pidof "${_prs}" >/dev/null; then
+    pkill "${_prs}"
+  fi
 done
 
 # relaunch waybar
-sleep 0.2
-waybar > /dev/null 2>&1 &
+sleep 1
+waybar &
 
 # relaunch swaync
-sleep 0.2
-swaync > /dev/null 2>&1 &
-
+sleep 0.5
+swaync >/dev/null 2>&1 &
 
 exit 0
-
-
