@@ -108,6 +108,8 @@ export SUDO_PROMPT="$fg[white]Deploying $fg[red]root access for %u $fg[blue]pass
 #                         
 precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
+precmd_newline() { print "" }
+precmd_functions+=( precmd_newline )
 
 +vi-git-untracked(){
     if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == 'true' ]] && \
