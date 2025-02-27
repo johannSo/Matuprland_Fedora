@@ -47,7 +47,6 @@
 		"format-icons": {
 			"active": " ",
 			"default": " ",
-			"sort-by-number": true,
 			"urgent": " "
 		},
 		"on-click": "activate",

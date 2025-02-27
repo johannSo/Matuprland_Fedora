@@ -1,252 +1,260 @@
 /***
- *    ┏┓┳┓┳┳┳┓┏┓┏┳┓┏┓┳┓  ┓ ┏┏┓┓┏┳┓┏┓┳┓  ┏┓┏┓┏┓
- *    ┣┫┃┃┃┃┃┃┣┫ ┃ ┣ ┃┃━━┃┃┃┣┫┗┫┣┫┣┫┣┫━━┃ ┗┓┗┓
- *    ┛┗┛┗┻┛ ┗┛┗ ┻ ┗┛┻┛  ┗┻┛┛┗┗┛┻┛┛┗┛┗  ┗┛┗┛┗┛
- *                                            
+ *    ┓ ┏┏┓┓┏┳┓┏┓┳┓  ┳┓┳┳┳┓┳┓┓ ┏┓┏┓  ┏┓┏┓┏┓
+ *    ┃┃┃┣┫┗┫┣┫┣┫┣┫━━┣┫┃┃┣┫┣┫┃ ┣ ┗┓━━┃ ┗┓┗┓
+ *    ┗┻┛┛┗┗┛┻┛┛┗┛┗  ┻┛┗┛┻┛┻┛┗┛┗┛┗┛  ┗┛┗┛┗┛
+ *                                         
  */
 
 
-@import 			"themes/animated-waybar/launch_animation.css"; 
-@import 			"matugen/matugen-waybar.css";
-@define-color background         @surface;
-@define-color background-alpha   alpha(@surface, 0.25);
-@define-color background-beta    alpha(@surface, 0.75);
-@define-color border             @outline;
-@define-color accent-bg          @primary;
-@define-color accent-fg          @on_primary;
-@define-color text               @on_surface;
-@define-color cyan               @tertiary;
+/*------------Importing Matugen Colors---------------*/
+@import "matugen/matugen-waybar.css";
 
+
+/*------------Global Properties-----------------*/
 * {
-  all: unset;
-  font-family: "GeistMono Nerd Font Propo";
-  font-weight: bold;
-  font-size: 14px;
-  min-height: 0px;
-  border-radius: 6px;
+    border: none;
+    border-radius: 0px;
+    font-family: GeistMono Nerd Font Propo;
+    font-size: 12px;
+    min-height: 0;
 }
 
+/*------------Window--------------------*/
+#window{
+    background: @surface;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*----------Waybar Window------------*/
 window#waybar {
-  background: @background-beta;
-  color: @text;
-  border: 1px solid alpha(@border, 0.75);
-  transition:
-    background-color 0.25s linear,
-    color 0.25s linear,
-    border-color 0.5s linear;
+    background: @surface-alpha;
 }
 
-#workspaces button,
-#taskbar button {
-  color: @text;
-  margin: 6px;
-  min-width: 15px;
-  text-shadow:
-    -1px -1px 2px @background,
-    1px -1px 2px @background,
-    -1px 1px 2px @background,
-    1px 1px 2px @background;
-  border: 1px solid transparent;
-  transition: all 0.25s linear;
-}
-
-#workspaces button,
-#taskbar button {
-  padding: 4px;
-}
-
-#workspaces button.active,
-#taskbar button.active,
-#workspaces button.visible:not(.active) {
-  background: @accent-bg;
-  color: @accent-fg;
-  text-shadow: none;
-  border: 1px solid @background;
-}
-
-#workspaces button.visible:not(.active) {
-  opacity: 0.5;
-}
-
-#workspaces button:hover,
-#taskbar button:hover {
-  opacity: 0.75;
-  border: 1px solid @background;
-}
-
-#workspaces button:hover:not(.active),
-#taskbar button:hover:not(.active):not(.maximized):not(.fullscreen) {
-  border-color: @accent-bg;
-}
-
-#workspaces button.empty {
-  opacity: 0.5;
-}
-
-#workspaces,
-#taskbar {
-  padding: 0 2px;
-}
-
-#taskbar button.maximized,
-#taskbar button.fullscreen {
-  border-color: @cyan;
-}
-
-#taskbar button.maximized.active,
-#taskbar button.fullscreen.active {
-  background: @cyan;
-}
-
-window#waybar.fullscreen {
-  border-color: @cyan;
-}
-
-window#waybar.fullscreen #window {
-  background: @background;
-  border-color: @cyan;
-}
-
-#waybar.fullscreen .module:not(.plugged):not(.charging):not(.Playing) {
-  /* Uncomment this if needed */
-  /* background: @background; */
-}
-
-#waybar.fullscreen #workspaces button:not(.active),
-#waybar.fullscreen
-  #taskbar
-  button:not(.maximized):not(.fullscreen):not(:hover) {
-  border-color: transparent;
-}
-
-#waybar.fullscreen #workspaces button:hover:not(.active),
-#waybar.swallowing #workspaces button:hover:not(.active) {
-  border-color: @accent-bg;
-}
-
-window#waybar.empty #window,
-#taskbar.empty {
-  border-color: transparent;
-  background-color: transparent;
-  opacity: 0;
-  padding: 0;
-  margin: 0;
-}
-
-window#waybar.swallowing #window {
-  border-color: @tertiary;
-}
-
-.module {
-  background: @background-alpha 0 0 / 750% 750%;
-  color: @text;
-  padding: 0 10px;
-  margin: 0 4px;
-  border: 1px solid @border;
-  text-shadow:
-    -1px -1px 2px @background,
-    1px -1px 2px @background,
-    -1px 1px 2px @background,
-    1px 1px 2px @background;
-  transition: all 0.25s linear;
-}
-
-.module:hover:not(#workspaces):not(#taskbar):not(#tray) {
-  background: @accent-bg 0 0 / 750% 750%;
-  color: @accent-fg;
-  border: 1px solid @background;
-  text-shadow: none;
-}
-
-#privacy {
-  color: @surface;
-  margin: 0 4px;
-  padding: 0 10px;
-  border: 1px solid @border;
-  background-color: @error;
-}
-
+/*-----------Tooltip--------------*/
 tooltip {
-  margin: 2px;
-  background: @background-beta;
-  color: @text;
-  border: 1px solid @border;
-  text-shadow:
-    -1px -1px 2px @background,
-    1px -1px 2px @background,
-    -1px 1px 2px @background,
-    1px 1px 2px @background;
-  box-shadow:
-    -1px -1px 2px alpha(@border, 0.25),
-    1px -1px 2px alpha(@border, 0.25),
-    -1px 1px 2px alpha(@border, 0.25),
-    1px 1px 2px alpha(@border, 0.25);
+  background: @surface;
+  border: 2px solid @tertiary;
+  border-radius: 12px;
+}
+tooltip label {
+  color: @on_surface;
+  padding: 6px;
 }
 
-#tray menu {
-  background: @background-beta;
-  box-shadow: none;
-  margin: 2px;
-  padding: 5px;
-  border: 1px solid @border;
+/*---------Workspaces-----------------*/
+#workspaces {
+    background: @surface;
+    margin: 5px 5px;
+    padding: 8px 5px;
+    border-radius: 16px;
+    color: @on_surface;
+}
+#workspaces button {
+    font-weight: bold;
+    padding: 0px 5px;
+    margin: 0px 3px;
+    border-radius: 16px;
+    color: transparent;
+    background: @surface_container_highest;
+    transition: all 0.3s ease-in-out;
 }
 
-#tray menu menuitem {
-  padding: 2px 20px 2px 20px;
-  margin: 2px;
-  border: 1px solid transparent;
-  transition:
-    background-color 0.1s,
-    color 0.1s,
-    border-color 0.1s,
-    text-shadow 0.1s;
+#workspaces button.active {
+    font-weight: bold;
+    background-color: @primary;
+    color: @scrim;
+    border-radius: 16px;
+    min-width: 50px;
+    background-size: 400% 400%;
+    transition: all 0.3s ease-in-out;
 }
 
-#tray menu menuitem:disabled label {
-  opacity: 0.75;
+#workspaces button:hover {
+    font-weight: bold;
+    background-color: @tertiary;
+    color: @scrim;
+    border-radius: 16px;
+    min-width: 50px;
+    background-size: 400% 400%;
 }
 
-#tray menu menuitem:hover:not(:disabled) {
-  background-color: @text;
-  color: @accent-fg;
-  text-shadow: none;
-  border-color: @border;
-  margin: 2px;
-}
-
-.modules-left {
-  margin-left: -4px;
-}
-
-.modules-right {
-  margin-right: -4px;
-}
-
-#custom-menu {
-  min-width: 30px; 
-}
-
-#pulseaudio,
-#backlight,
-#battery,
-#network {
-  min-width: 46px;
+#workspaces button.urgent {
+    font-weight: bold;
+    background-color: @error;
+    color: @scrim;
+    border-radius: 16px;
+    min-width: 50px;
+    background-size: 400% 400%;
+    transition: all 0.3s ease-in-out;
 }
 
 
-#cpu,
-#memory,
-#custom-pacman,
-#custom-weather,
-#custom-colorpicker{
-  min-width: 24px;
+/*-----------SwayNC & Weather------------*/
+#custom-swaync, #custom-weather {
+    font-weight: bold;
+    background: @surface;
+    margin: 5px; 
+    padding: 8px 16px;
+    color: @on_surface;
+}
+#custom-weather {
+    border-radius: 24px 10px 24px 10px;
+}
+#custom-swaync {
+    border-radius: 10px 24px 10px 24px;
 }
 
-#custom-notification {
-  min-width: 24px;
-  font-size: 12px;
+/*---------------Tray, Clock, Playerctl, Battery, Cpu, Temperature, Colorpicker, Memory, Idle_inhibitor----------------------*/
+#tray, #pulseaudio, #network, #battery, #cpu, #temperature, #custom-colorpicker, #memory, #custom-pacman, #idle_inhibitor,
+#custom-playerctl.backward, #custom-playerctl.play, #custom-playerctl.foward{
+    background: @surface;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+#tray, #pulseaudio, #network, #battery{
+    color: @on_surface;
+    border-radius: 10px 24px 10px 24px;
+    padding: 0 20px;
+    margin-left: 7px;
+}
+#clock {
+    color: @on_surface;
+    background: @surface;
+    border-radius: 0px 0px 0px 40px;
+    padding: 10px 10px 15px 25px;
+    margin-left: 7px;
+    font-weight: bold;
+    font-size: 14px;
 }
 
-#custom-playerctl {
-  min-width: 140px;
+#tray menu * {
+    padding: 0px 5px;
+    transition: all .3s ease; 
 }
+
+#tray menu separator {
+    padding: 0px 5px;
+    transition: all .3s ease; 
+}
+
+
+/*-----------Playerctl-------------------*/
+#custom-playerctl.backward, #custom-playerctl.play, #custom-playerctl.foward {
+    background: @surface;
+    font-size: 22px;
+}
+#custom-playerctl.backward:hover, #custom-playerctl.play:hover, #custom-playerctl.foward:hover{
+    color: @on_surface;
+}
+#custom-playerctl.backward {
+    color: @tertiary;
+    border-radius: 24px 0px 0px 10px;
+    padding-left: 16px;
+    margin-left: 7px;
+}
+#custom-playerctl.play {
+    color: @on_primary_fixed_variant;
+    padding: 0 5px;
+}
+#custom-playerctl.foward {
+    color: @tertiary;
+    border-radius: 0px 10px 24px 0px;
+    padding-right: 12px;
+    margin-right: 7px
+}
+#custom-playerlabel {
+    background: @surface;
+    color: @on_surface;
+    padding: 0 20px;
+    border-radius: 24px 10px 24px 10px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/*-----------Group--------------*/
+#group-utility {
+    padding: 0px 5px;
+    transition: all .3s ease; 
+}
+
+
+
+/*-------------Launcher--------------*/
+#custom-launcher {
+    color: @on_tertiary_container;
+    background: @surface;
+    margin: 0px 5px 0px 0px;
+    padding: 0px 35px 0px 15px;
+    border-radius: 0px 0px 40px 0px;
+    font-size: 28px;
+}
+
+/*--------------Cpu, Termperature, Colorpicker, Memory, Idle_inhibitor----------------*/
+#custom-colorpicker, #cpu, #temperature, #memory, #custom-pacman,#idle_inhibitor {
+    background: @surface;
+    font-size: 16px;
+}
+
+#cpu {
+    color: @tertiary;
+}
+
+#memory {
+    color: @primary;
+}
+
+#temperature {
+    color: @tertiary;
+}
+
+#custom-pacman {
+    color: @primary;
+}
+
+#idle_inhibitor {
+    color: @on_surface;
+}
+
+#idle_inhibitor.activated {
+    color: @error;
+}
+
+#cpu {
+    color: @tertiary;
+    border-radius: 24px 0px 0px 10px;
+    padding-left: 16px;
+    padding-right: 7px;
+    margin-left: 7px;
+}
+
+#temperature, #memory, #custom-pacman, #idle_inhibitor {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+#custom-colorpicker {
+    color: @tertiary;
+    border-radius: 0px 10px 24px 0px;
+    padding-right: 12px;
+    padding-left: 7px;
+    margin-right: 7px
+}
+
+/*---------------Expand---------------*/
+#custom-expand {
+    background: transparent;
+    color: @on_surface;
+    margin: 1px;
+    font-size: 22px;
+}
+
+#custom-expand:hover {
+    color: @primary;
+}
+
