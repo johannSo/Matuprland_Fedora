@@ -1,0 +1,122 @@
+<h2 align="center">
+  <img src="https://github.com/Abhra00/Matuprland-assets/blob/main/Lofi%20-%20Anime%20Girl2.png" alt="Logo"/><br><br>
+  Matuprland for Hyprland
+</h2>
+
+<h3 align="center">
+  A material-you config
+</h3>
+
+<h4 align="center">[](url)
+  <a href="https://github.com/Abhra00/walls">My wallpapers!</a>
+  </h4>
+
+>   [!Caution]
+>   Requires [Matugen](https://github.com/InioX/matugen) to work
+
+<h3 align="center">
+	<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Activity/Sparkles.webp" alt="Sparkles" width="38" height="38" />
+	Aestheic Material-You Rice
+	<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Activity/Sparkles.webp" alt="Sparkles" width="38" height="38" />
+</h3>
+
+# Features
+- Fully matugen integrated
+- All-in-one setup
+- Easy to use
+- Beautiful rofi menus
+- Concise
+
+# Screenshots
+<details>
+<summary>
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Activity/Artist%20Palette.webp" alt="Artist Palette" width="32" height="32" />
+  Rofi
+</summary>
+
+<h4 align="center"> Menu </h4>
+
+![Launcher](https://github.com/Abhra00/Matuprland-assets/blob/main/output1-ezgif.com-video-to-gif-converter.gif)
+
+<h4 align="center"> Waybar Changer </h4>
+
+![Waybar](https://github.com/Abhra00/Matuprland-assets/blob/main/Screenshot_28-Feb_20-43-24_18983.png)
+
+<h4 align="center"> Wallpaper Selector </h4>
+
+![Wallpapers](https://github.com/Abhra00/Matuprland-assets/blob/main/Screenshot_28-Feb_20-43-32_5845.png)
+
+<h4 align="center"> Clipboard </h4>
+
+![Clipboard](https://github.com/Abhra00/Matuprland-assets/blob/main/Screenshot_28-Feb_20-42-53_3064.png)
+
+</details>
+
+<details>
+<summary> 
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Travel%20and%20Places/Compass.webp" alt="Compass" width="32" height="32" />
+  Waybar
+</summary>
+
+![Castle-shot](https://github.com/Abhra00/Matuprland-assets/blob/main/output-ezgif.com-video-to-gif-converter.gif)
+
+</details>
+
+
+<details>
+<summary>
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Locked%20With%20Key.webp" alt="Locked With Key" width="32" height="32" />
+  Hyprlock
+</summary>
+
+![Blue](.github/hyprlock/blue.png)
+![Red](.github/hyprlock/red.png)
+![Grey](.github/hyprlock/grey.png)
+
+</details>
+
+<details>
+  
+<summary>
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Light%20Bulb.webp" alt="Light Bulb" width="32" height="32" />
+  Swaync
+</summary>
+
+![White](.github/swaync/white.png)
+![Yellow](.github/swaync/yellow.png)
+![Purple](.github/swaync/purple.png)
+
+</details>
+
+<details>
+<summary>
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Old%20Key.webp" alt="Old Key" width="32" height="32" />
+  Wlogout
+</summary>
+  
+![green](.github/wlogout/green.png)
+![green-hover](.github/wlogout/green-hover.png)
+![blue](.github/wlogout/blue.png)
+![blue](.github/wlogout/blue-hover.png)
+
+</details>
+
+# TODO
+
+- [ ] Switch to Matugen (or Wallust)
+- [ ] Tweak swaync mpris cover background
+- [ ] Branch old rofi
+
+# Progress
+- [x] Hyprland
+- [x] Hyprlock
+- [X] Rofi
+- [x] Waybar
+- [x] Swaync
+- [x] Wlogout
+
+
+# Thanks to
+ - [JaKooLit](https://github.com/JaKooLit) for the scripts and dotfiles!
+ - [adi1090x](https://github.com/adi1090x/rofi) themes ideias!
+
