@@ -116,4 +116,6 @@
  - [prasanthrangan](https://github.com/prasanthrangan/hyprdots) rofi themes ideas!
  - [Tamarindtype](https://github.com/Tamarindtype/googlish-hyprlock-theme) for hyprlock
  - [Elifouts](https://github.com/elifouts/Dotfiles) for one waybar theme
+-
+[zDyanTB](https://github.com/zDyanTB/HyprNova) for initial swaync
         
