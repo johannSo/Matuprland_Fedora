@@ -50,6 +50,11 @@
 
 ![Clipboard](https://github.com/Abhra00/Matuprland-assets/blob/main/Screenshot_28-Feb_20-42-53_3064.png)
 
+<h4 align="center"> Emoji Selector </h4>
+
+![Clipboard](https://github.com/Abhra00/Matuprland-assets/blob/main/Screenshot_28-Feb_20-43-40_5593.png)
+
+
 </details>
 
 <details>
