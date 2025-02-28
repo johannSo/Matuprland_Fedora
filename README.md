@@ -7,7 +7,7 @@
   A material-you config
 </h3>
 
-<h4 align="center">)
+<h4 align="center">
   <a href="https://github.com/Abhra00/walls">My wallpapers!</a>
   </h4>
 
