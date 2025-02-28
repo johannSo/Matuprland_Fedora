@@ -1,5 +1,5 @@
 <h2 align="center">
-  <img src="https://github.com/Abhra00/Matuprland-assets/blob/main/Lofi%20-%20Anime%20Girl2.webp" alt="Logo"/><br><br>
+  <img src="https://github.com/Abhra00/Matuprland-assets/blob/main/Lofi%20-%20Anime%20Girl2-1.webp" alt="Logo"/><br><br>
   Matuprland for Hyprland
 </h2>
 
