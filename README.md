@@ -7,7 +7,7 @@
   A material-you config
 </h3>
 
-<h4 align="center">[](url)
+<h4 align="center">)
   <a href="https://github.com/Abhra00/walls">My wallpapers!</a>
   </h4>
 
@@ -69,9 +69,7 @@
   Hyprlock
 </summary>
 
-![Blue](.github/hyprlock/blue.png)
-![Red](.github/hyprlock/red.png)
-![Grey](.github/hyprlock/grey.png)
+![Googlish Hyprlock](https://github.com/Abhra00/Matuprland-assets/blob/main/image.png)
 
 </details>
 
@@ -82,10 +80,7 @@
   Swaync
 </summary>
 
-![White](.github/swaync/white.png)
-![Yellow](.github/swaync/yellow.png)
-![Purple](.github/swaync/purple.png)
-
+![Matugen SwayNC](https://github.com/Abhra00/Matuprland-assets/blob/main/image(2).png)
 </details>
 
 <details>
@@ -94,18 +89,12 @@
   Wlogout
 </summary>
   
-![green](.github/wlogout/green.png)
-![green-hover](.github/wlogout/green-hover.png)
-![blue](.github/wlogout/blue.png)
-![blue](.github/wlogout/blue-hover.png)
+![Matugen Wlogout](https://github.com/Abhra00/Matuprland-assets/blob/main/Screenshot_28-Feb_20-29-34_23820.png)
 
 </details>
 
 # TODO
-
-- [ ] Switch to Matugen (or Wallust)
-- [ ] Tweak swaync mpris cover background
-- [ ] Branch old rofi
+## Constant improvement I guess 🙃
 
 # Progress
 - [x] Hyprland
@@ -119,4 +108,6 @@
 # Thanks to
  - [JaKooLit](https://github.com/JaKooLit) for the scripts and dotfiles!
  - [adi1090x](https://github.com/adi1090x/rofi) themes ideias!
-
+ - [Tamarindtype] (https://github.com/Tamarindtype/googlish-hyprlock-theme) for hyprlock
+ - [Elifouts] (https://github.com/elifouts/Dotfiles) for one waybar theme
+        
