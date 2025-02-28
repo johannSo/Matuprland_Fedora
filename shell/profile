@@ -22,7 +22,7 @@ unsetopt PROMPT_SP 2>/dev/null
 # Variables
 export EDITOR="nvim"
 export TERMINAL="foot"
-export BROWSER="firefox"
+export BROWSER="librewolf"
 
 # Home cleanup
 export XDG_CONFIG_HOME="$HOME/.config"
