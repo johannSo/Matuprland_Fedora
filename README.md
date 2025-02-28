@@ -112,7 +112,8 @@
 
 # Thanks to
  - [JaKooLit](https://github.com/JaKooLit) for the scripts and dotfiles!
- - [adi1090x](https://github.com/adi1090x/rofi) themes ideias!
+ - [adi1090x](https://github.com/adi1090x/rofi) rofi themes ideias!
+ - [prasanthrangan](https://github.com/prasanthrangan/hyprdots) rofi themes ideas!
  - [Tamarindtype](https://github.com/Tamarindtype/googlish-hyprlock-theme) for hyprlock
  - [Elifouts](https://github.com/elifouts/Dotfiles) for one waybar theme
         
