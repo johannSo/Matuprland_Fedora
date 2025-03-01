@@ -85,7 +85,7 @@
   Swaync
 </summary>
 
-![Matugen SwayNC](https://github.com/Abhra00/Matuprland-assets/blob/main/image(2).png)
+![Matugen SwayNC](https://github.com/Abhra00/Matuprland-assets/blob/main/image(1).png)
 </details>
 
 <details>
