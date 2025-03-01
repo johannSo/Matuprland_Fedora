@@ -83,3 +83,14 @@ output_path = '~/.config/cava/config'
 [templates.neovim]
 input_path = '~/.config/matugen/templates/matugen-colors.vim'
 output_path = '~/.cache/wal/colors-wal.vim'
+
+# Pywalfox
+[templates.pywalfox]
+input_path = '~/.config/matugen/templates/pywalfox-colors.json'
+output_path = '~/.cache/wal/colors.json'
+post_hook = 'pywalfox update'
+
+# Librewolf startup page
+[templates.librewolf]
+input_path = '~/.config/matugen/templates/matugen-librewolf-startup-page.css'
+output_path = '~/.local/share/startup-page/app.css'
