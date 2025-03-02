@@ -12,7 +12,7 @@ version_check = true
 # Foot
 [templates.foot]
 input_path = '~/.config/matugen/templates/matugen-foot.ini'
-output_path = '~/.config/foot/matugen/matugen-foot-colors'
+output_path = '~/.config/foot/matugen/matugen-foot-colors.ini'
 
 # Bat
 [templates.bat]
