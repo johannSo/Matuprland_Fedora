@@ -43,7 +43,7 @@
 
 	/*----------Hyprland Workspace----------*/
 	"hyprland/workspaces": {
-		"format": "{name}",
+		"format": "{id}",
 		"format-icons": {
 			"active": " ",
 			"default": " ",
