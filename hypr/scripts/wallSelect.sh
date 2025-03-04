@@ -45,7 +45,7 @@ monitor_width=$(hyprctl monitors -j | jq -r --arg mon "$focused_monitor" '.[] | 
 scale_factor=$(hyprctl monitors -j | jq -r --arg mon "$focused_monitor" '.[] | select(.name == $mon) | .scale')
 
 # Calculate icon size
-icon_size=$(echo "scale=2; ($monitor_width * 14) / ($scale_factor * 100)" | bc)
+icon_size=$(echo "scale=2; ($monitor_width * 14) / ($scale_factor * 96)" | bc)
 rofi_override="element-icon{size:${icon_size}px;}"
 rofi_command="rofi -i -show -dmenu -theme $HOME/.config/rofi/applets/wallSelect.rasi -theme-str $rofi_override"
 
@@ -111,7 +111,7 @@ fi
 # Launch rofi
 wall_selection=$(find "${wall_dir}" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" -o -iname "*.gif" \) -print0 |
     xargs -0 basename -a |
-    LC_ALL=C sort |
+    LC_ALL=C sort -V |
     while IFS= read -r A; do
         if [[ "$A" =~ \.gif$ ]]; then
             printf "%s\n" "$A"  # Handle gifs by showing only file name

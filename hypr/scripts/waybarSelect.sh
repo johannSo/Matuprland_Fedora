@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+#  ┓ ┏┏┓┓┏┳┓┏┓┳┓  ┏┓┏┓┓ ┏┓┏┓┏┳┓
+#  ┃┃┃┣┫┗┫┣┫┣┫┣┫━━┗┓┣ ┃ ┣ ┃  ┃ 
+#  ┗┻┛┛┗┗┛┻┛┛┗┛┗  ┗┛┗┛┗┛┗┛┗┛ ┻ 
+#                              
+
+
 
 WAYBAR_THEME_DIR="$HOME/.config/waybar/themes"
 WAYBAR_CONFIG="$HOME/.config/waybar/config.jsonc"
