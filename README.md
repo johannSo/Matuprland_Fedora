@@ -40,19 +40,19 @@
 
 <h4 align="center"> Waybar Changer </h4>
 
-![Waybar](https://github.com/Abhra00/Matuprland-assets/blob/main/Screenshot_28-Feb_20-43-24_18983.png)
+![Waybar](https://github.com/Abhra00/Matuprland-assets/blob/main/Screenshot_28-Feb_20-43-24_18983.webp)
 
 <h4 align="center"> Wallpaper Selector </h4>
 
-![Wallpapers](https://github.com/Abhra00/Matuprland-assets/blob/main/Screenshot_28-Feb_20-43-32_5845.png)
+![Wallpapers](https://raw.githubusercontent.com/Abhra00/Matuprland-assets/refs/heads/main/Screenshot_04-Mar_16-37-38_22080.webp)
 
 <h4 align="center"> Clipboard </h4>
 
-![Clipboard](https://github.com/Abhra00/Matuprland-assets/blob/main/Screenshot_28-Feb_20-42-53_3064.png)
+![Clipboard](https://github.com/Abhra00/Matuprland-assets/blob/main/Screenshot_28-Feb_20-42-53_3064.webp)
 
 <h4 align="center"> Emoji Selector </h4>
 
-![Clipboard](https://github.com/Abhra00/Matuprland-assets/blob/main/Screenshot_28-Feb_20-43-40_5593.png)
+![Clipboard](https://github.com/Abhra00/Matuprland-assets/blob/main/Screenshot_28-Feb_20-43-40_5593.webp)
 
 
 </details>
@@ -74,7 +74,7 @@
   Hyprlock
 </summary>
 
-![Googlish Hyprlock](https://github.com/Abhra00/Matuprland-assets/blob/main/image.png)
+![Googlish Hyprlock](https://github.com/Abhra00/Matuprland-assets/blob/main/image.webp)
 
 </details>
 
@@ -85,7 +85,7 @@
   Swaync
 </summary>
 
-![Matugen SwayNC](https://github.com/Abhra00/Matuprland-assets/blob/main/image(1).png)
+![Matugen SwayNC](https://github.com/Abhra00/Matuprland-assets/blob/main/image(1).webp)
 </details>
 
 <details>
@@ -94,7 +94,7 @@
   Wlogout
 </summary>
   
-![Matugen Wlogout](https://github.com/Abhra00/Matuprland-assets/blob/main/Screenshot_28-Feb_20-29-34_23820.png)
+![Matugen Wlogout](https://github.com/Abhra00/Matuprland-assets/blob/main/Screenshot_28-Feb_20-29-34_23820.webp)
 
 </details>
 
@@ -105,7 +105,7 @@
   Librewolf startup page
 </summary>
   
-![Matugen Librewolf](https://github.com/Abhra00/Matuprland-assets/blob/main/Screenshot_01-Mar_20-04-15_1145.png)
+![Matugen Librewolf](https://github.com/Abhra00/Matuprland-assets/blob/main/Screenshot_01-Mar_20-04-15_1145.webp)
 
 </details>
 
