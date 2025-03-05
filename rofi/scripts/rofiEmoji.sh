@@ -1,29 +1,32 @@
 #!/usr/bin/env bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
 #  ┳┓┏┓┏┓┳  ┏┓┳┳┓┏┓┏┳┳
 #  ┣┫┃┃┣ ┃━━┣ ┃┃┃┃┃ ┃┃
 #  ┛┗┗┛┻ ┻  ┗┛┛ ┗┗┛┗┛┻
-#
-                     
-# Variables
-rofi_theme="$HOME/.config/rofi/applets/emojiSelector.rasi"
-msg='** note ** 👀 Click or Return to choose || Ctrl V to Paste'
+#                     
 
-# Check if rofi is already running
-if pidof rofi > /dev/null; then
-  pkill rofi
+
+if [ $? -eq 0 ]
+then
+    sed '1,/^### DATA ###$/d' $0 | rofi -dmenu -theme $HOME/.config/rofi/applets/emojiSelector.rasi | cut -d ' ' -f 1 | tr -d '\n' | wl-copy
+else
+    sed '1,/^### DATA ###$/d' $0 | rofi -dmenu -theme $HOME/.config/rofi/applets/emojiSelector.rasi | cut -d ' ' -f 1 | tr -d '\n' | wl-copy
 fi
-
-sed '1,/^# # DATA # #$/d' "$0" | \
-rofi -i -dmenu -mesg "$msg" -theme $rofi_theme | \
-awk '{print $1}' | \
-head -n 1 | \
-tr -d '\n' | \
-wl-copy
-
 exit
-
-# # DATA # #
+### DATA ###
+¿? question upside down reversed spanish
+← left arrow
+↑ up arrow
+→ right arrow
+↓ down arrow
+←↑→↓ all directions up down left right arrows
+AH↗️HA↘️HA↗️HA↘️HA↗️HA↘️HA↗️HA↘️ pekora arrows hahaha rabbit
+• dot circle separator
+「」 japanese quote square bracket
+¯\_(ツ)_/¯ shrug idk i dont know
+↵ enter key return
+𝕏  twitter x logo
+👉👈 etou ughhhhhhh shy
+👉👌 put it in imagination perv
 😀 grinning face face smile happy joy :D grin
 😃 grinning face with big eyes face happy joy haha :D :) smile funny
 😄 grinning face with smiling eyes face happy joy funny haha laugh like :D :) smile
@@ -42,7 +45,7 @@ exit
 🤩 star struck face smile starry eyes grinning
 😘 face blowing a kiss face love like affection valentines infatuation kiss
 😗 kissing face love like face 3 valentines infatuation kiss
-☺️  smiling face face blush massage happiness
+☺️ smiling face face blush massage happiness
 😚 kissing face with closed eyes face love like affection valentines infatuation kiss
 😙 kissing face with smiling eyes face affection valentines infatuation kiss
 😋 face savoring food happy joy tongue smile face silly yummy nom delicious savouring
@@ -89,11 +92,11 @@ exit
 😕 confused face face indifference huh weird hmmm :/
 😟 worried face face concern nervous :(
 🙁 slightly frowning face face frowning disappointed sad upset
-☹️  frowning face face sad upset frown
+☹️ frowning face face sad upset frown
 😮 face with open mouth face surprise impressed wow whoa :O
 😯 hushed face face woo shh
 😲 astonished face face xox surprised poisoned
-😳 flushed face face blush shy flattered
+😳 flushed face face blush shy flattered sex
 🥺 pleading face face begging mercy
 😦 frowning face with open mouth face aw what
 😧 anguished face face stunned nervous
@@ -101,7 +104,7 @@ exit
 😰 anxious face with sweat face nervous sweat
 😥 sad but relieved face face phew sweat nervous
 😢 crying face face tears sad depressed upset :'(
-😭 loudly crying face face cry tears sad upset depressed
+😭 loudly crying face face cry tears sad upset depressed sob
 😱 face screaming in fear face munch scared omg
 😖 confounded face face confused sick unwell oops :S
 😣 persevering face face sick no upset oops
@@ -117,7 +120,7 @@ exit
 😈 smiling face with horns devil horns
 👿 angry face with horns devil angry horns
 💀 skull dead skeleton creepy death
-☠️  skull and crossbones poison danger deadly scary death pirate evil
+☠️ skull and crossbones poison danger deadly scary death pirate evil
 💩 pile of poo hankey shitface fail turd shit
 🤡 clown face face
 👹 ogre monster red mask halloween scary creepy devil demon japanese ogre
@@ -148,9 +151,9 @@ exit
 💞 revolving hearts love like affection valentines
 💕 two hearts love like affection valentines heart
 💟 heart decoration purple-square love like
-❣️  heart exclamation decoration love
+❣️ heart exclamation decoration love
 💔 broken heart sad sorry break heart heartbreak
-❤️  red heart love like valentines
+❤️ red heart love like valentines
 🧡 orange heart love like affection valentines
 💛 yellow heart love like affection valentines
 💚 green heart love like affection valentines
@@ -190,7 +193,7 @@ exit
 👆 backhand index pointing up fingers hand direction up
 🖕 middle finger hand fingers rude middle flipping
 👇 backhand index pointing down fingers hand direction down
-☝️  index pointing up hand fingers direction up
+☝️ index pointing up hand fingers direction up
 👍 thumbs up thumbsup yes awesome good agree accept cool hand like +1
 👎 thumbs down thumbsdown no dislike hand -1
 ✊ raised fist fingers hand grasp
@@ -203,7 +206,7 @@ exit
 🤲 palms up together hands gesture cupped prayer
 🤝 handshake agreement shake
 🙏 folded hands please hope wish namaste highfive pray
-✍️  writing hand lower left ballpoint pen stationery write compose
+✍️ writing hand lower left ballpoint pen stationery write compose
 💅 nail polish beauty manicure finger fashion nail
 🤳 selfie camera phone
 💪 flexed biceps arm flex hand summer strong biceps
@@ -1025,7 +1028,7 @@ exit
 🎱 pool 8 ball pool hobby game luck magic
 🔮 crystal ball disco party magic circus fortune teller
 🧿 nazar amulet bead charm
-🎮 video game play console PS4 controller
+🎮 video game play console PS4 Wii GameCube controller
 🕹️ joystick game play
 🎰 slot machine bet gamble vegas fruit machine luck casino
 🎲 game die dice random tabletop play luck
@@ -1408,7 +1411,7 @@ exit
 ©️ copyright ip license circle law legal
 ®️ registered alphabet circle
 ™️ trade mark trademark brand law legal
-ycap  symbol blue-square twitter
+#️⃣ keycap  symbol blue-square twitter
 *️⃣ keycap  star keycap
 0️⃣ keycap 0 0 numbers blue-square null
 1️⃣ keycap 1 blue-square numbers 1
