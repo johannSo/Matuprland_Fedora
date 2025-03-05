@@ -109,6 +109,17 @@
 
 </details>
 
+
+<details>
+<summary>
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/refs/heads/main/Animals%20and%20Nature/Duck.webp" alt="Firefox" width="32" height="32" />
+  Yazi FM
+</summary>
+  
+![YAZI FM](https://raw.githubusercontent.com/Abhra00/Matuprland-assets/refs/heads/main/Screenshot_06-Mar_00-56-30_1181.webp)
+
+</details>
+
 # TODO
 ## Constant improvement I guess 🙃
 
