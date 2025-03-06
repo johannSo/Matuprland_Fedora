@@ -275,4 +275,4 @@ source <(fzf --zsh)
 #  ┣┫┃┃ ┃ ┃┃┗┓ ┃ ┣┫┣┫ ┃ 
 #  ┛┗┗┛ ┻ ┗┛┗┛ ┻ ┛┗┛┗ ┻ 
 #                       
-catnap
+fastfetch --config $HOME/.config/fastfetch/config-aesthetic.jsonc
