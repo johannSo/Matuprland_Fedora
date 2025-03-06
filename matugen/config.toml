@@ -93,3 +93,10 @@ post_hook = 'pywalfox update'
 [templates.librewolf]
 input_path = '~/.config/matugen/templates/matugen-librewolf-startup-page.css'
 output_path = '~/.local/share/startup-page/app.css'
+
+# Zathura
+[templates.zathura]
+input_path = '~/.config/matugen/templates/matugen-zathurarc'
+output_path = '~/.config/zathura/matugen-zathurarc'
+
+
