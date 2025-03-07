@@ -27,7 +27,6 @@ done
 
 compinit -C -d ~/.config/zsh/zcompdump
 autoload -Uz colors && colors # Enabling colors
-autoload -Uz vcs_info         # Version control system
 autoload -Uz add-zsh-hook     # Adding zsh hook for custom functions
 _comp_options+=(globdots)
 
@@ -45,10 +44,6 @@ zstyle ':completion:*' matcher-list \
 		'+l:|=*'
 zstyle ':completion:*:warnings' format "%B%F{red}No matches for:%f %F{magenta}%d%b"
 zstyle ':completion:*:descriptions' format '%F{yellow}[-- %d --]%f'
-zstyle ':vcs_info:*' enable git
-zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
-zstyle ':vcs_info:*' check-for-changes true
-zstyle ':vcs_info:git:*' formats " %{$fg[blue]%}(%{$fg[red]%}%m%u%c%{$fg[yellow]%}%{$fg[magenta]%} %b%{$fg[blue]%})%{$reset_color%}"
 
 #  ┏┓┏┓┏┓━┓  ┏┓┏┓┏┓┳┳┏┓┳┓┏┓┏┓  ┏┓┏┓┳┓  ┏┓┏┓┏┓┏┳┓  ┏┳┓┏┓┳┓┳┳┓┳┳┓┏┓┓ 
 #  ┃┃┗┓┃  ┃  ┗┓┣ ┃┃┃┃┣ ┃┃┃ ┣   ┣ ┃┃┣┫  ┣ ┃┃┃┃ ┃    ┃ ┣ ┣┫┃┃┃┃┃┃┣┫┃ 
@@ -106,20 +101,7 @@ export SUDO_PROMPT="$fg[white]Deploying $fg[red]root access for %u $fg[blue]pass
 #   ┃ ┣┫┣   ┃┃┣┫┃┃┃┃┃┃┃ ┃ 
 #   ┻ ┛┗┗┛  ┣┛┛┗┗┛┛ ┗┣┛ ┻ 
 #                         
-precmd_vcs_info() { vcs_info }
-precmd_functions+=( precmd_vcs_info )
-precmd_newline() { print "" }
-precmd_functions+=( precmd_newline )
-
-+vi-git-untracked(){
-    if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == 'true' ]] && \
-        git status --porcelain | grep '??' &> /dev/null ; then
-        hook_com[staged]+='!' # signify new files with a bang
-    fi
-}
-
-PROMPT="%B%{$fg[yellow]%}⚡% %(?:%{$fg_bold[green]%} ➜ :%{$fg_bold[red]%} ➜ )%{$fg[cyan]%}%c%{$reset_color%}"
-PROMPT+="\$vcs_info_msg_0_ "
+# !!! USING PURE ZSH PROMPT & IT WILL BE DOWNLOADED AUTOMATICALLY BY THE PLUGIN HELPER 🚀 !!!
 
 
 
@@ -212,6 +194,7 @@ function plugin-load {
 
 # list of github repos of plugins
 repos=(
+	sindresorhus/pure
 	zsh-users/zsh-autosuggestions
 	zdharma-continuum/fast-syntax-highlighting
 	zsh-users/zsh-history-substring-search
