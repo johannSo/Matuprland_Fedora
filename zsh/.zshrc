@@ -101,7 +101,7 @@ export SUDO_PROMPT="$fg[white]Deploying $fg[red]root access for %u $fg[blue]pass
 #   ┃ ┣┫┣   ┃┃┣┫┃┃┃┃┃┃┃ ┃ 
 #   ┻ ┛┗┗┛  ┣┛┛┗┗┛┛ ┗┣┛ ┻ 
 #                         
-# !!! USING PURE ZSH PROMPT & IT WILL BE DOWNLOADED AUTOMATICALLY BY THE PLUGIN HELPER 🚀 !!!
+# !!! USING STARSHIP PROMPT FOR THAT 🚀 !!!
 
 
 
@@ -194,7 +194,6 @@ function plugin-load {
 
 # list of github repos of plugins
 repos=(
-	sindresorhus/pure
 	zsh-users/zsh-autosuggestions
 	zdharma-continuum/fast-syntax-highlighting
 	zsh-users/zsh-history-substring-search
