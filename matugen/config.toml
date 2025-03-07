@@ -9,6 +9,11 @@ version_check = true
 
 # Templates
 
+# Kitty
+[templates.kitty]
+input_path = '~/.config/matugen/templates/kitty.conf'
+output_path = '~/.config/kitty/matugen/colors.conf'
+
 # Foot
 [templates.foot]
 input_path = '~/.config/matugen/templates/matugen-foot.ini'
@@ -19,11 +24,6 @@ output_path = '~/.config/foot/matugen/matugen-foot-colors.ini'
 input_path = '~/.config/matugen/templates/matugen-bat-colors.tmTheme'
 output_path = '~/.config/bat/themes/matugen-bat-colors.tmTheme'
 post_hook = 'bat cache --build' 
-
-# Spicetify
-[templates.spicetify]
-input_path = '~/.config/matugen/templates/spotify-colors.ini'
-output_path = '~/.config/spicetify/Themes/Comfy/color.ini'
 
 # Rofi
 [templates.rofi]
@@ -88,15 +88,3 @@ output_path = '~/.cache/wal/colors-wal.vim'
 input_path = '~/.config/matugen/templates/pywalfox-colors.json'
 output_path = '~/.cache/wal/colors.json'
 post_hook = 'pywalfox update'
-
-# Librewolf startup page
-[templates.librewolf]
-input_path = '~/.config/matugen/templates/matugen-librewolf-startup-page.css'
-output_path = '~/.local/share/startup-page/app.css'
-
-# Zathura
-[templates.zathura]
-input_path = '~/.config/matugen/templates/matugen-zathurarc'
-output_path = '~/.config/zathura/matugen-zathurarc'
-
-
