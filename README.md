@@ -36,7 +36,7 @@
 
 <h4 align="center"> Menu </h4>
 
-![Launcher](https://github.com/Abhra00/Matuprland-assets/blob/main/output1-ezgif.com-video-to-gif-converter.gif)
+![Launcher](https://github.com/Abhra00/Matuprland-assets/blob/main/rofi.gif)
 
 <h4 align="center"> Waybar Changer </h4>
 
@@ -63,7 +63,7 @@
   Waybar
 </summary>
 
-![Castle-shot](https://github.com/Abhra00/Matuprland-assets/blob/main/output-ezgif.com-video-to-gif-converter.gif)
+![Castle-shot](https://github.com/Abhra00/Matuprland-assets/blob/main/waybar.gif)
 
 </details>
 
